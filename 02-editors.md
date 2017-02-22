@@ -89,8 +89,11 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->I will be using PyCharm, I know it pretty well, it has great debugging and it adds the closing brackets automatically, which makes it so much easier not to forget any brackets. 
+>I will be using PyCharm, I know it pretty well, it has great debugging and it adds the closing brackets automatically, which makes it so much easier not to forget any brackets.
+
+
 Some useful keyboard shortcuts are ctrl+r to run a script, or ctrl+d to debug a script. cmd+/ adds a line comment. 
+
 PyCharm is costumized in the preferences. I use a black background, it's less tiring for my eyes.
 
  

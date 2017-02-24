@@ -19,7 +19,19 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> Command|Function
+> ---|---
+> pwd|show current working directory path
+> mkdir	<name>|creating a directory
+> rmdir	<name>|removing a directory
+> touch	<name>|create a file
+> rm <name>|remove a file
+> mv <name1> <name2>|rename a file
+> ls -a|list all files, including private/hidden ones
+> cp <name> <destination>|copying a file to a certain directory
+> man <command>|to open the manual of a certain command
+> stat <name>|show info about file
+> sudo <command>|run command as super user (has all permissions)
 
 ---
 
@@ -34,7 +46,15 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> Command|Function
+> ---|---
+> ls|list files/directories in current directory
+> ls -a| list all files, also private ones
+> ls -l|list files in 'long' version, i.e. with permissions, owner etc.
+> ls -lh|list files with size expressed in B/KB/MB/GB/PB instead of bites
+> ls -lah|list all files including hidden ones with B/KB/MB/GB/PB size
+> ls -t|list files sorted by time modified
+> ls - Glp|list files in color mode, long mode and indicate directories by adding a / at the end of their name
 
 ---
 
@@ -42,7 +62,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> Command|Function
+> ---|---
+> ls -d|displays all directories
+> ls -m|displays names as comm-separated list
+> ls -R|displays subdirectories as well
 
 ---
 
@@ -50,7 +74,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
+> Execute arguments. This is useful when the list of arguments for a certain command is too long. Illustration:
+> ```
+> find . -name *.txt
+> ```
+> This command finds all .txt files in the current directory, and this list can be very long. If you want to remove all these .txt files, you can feed the output of `find` to `xargs`,which will split it up in smaller lists and feed it to the command specified to its rigth, in the case of removal, `rm`:
+> ```
+> find. -name *.txt | xargs rm
+> ```
 

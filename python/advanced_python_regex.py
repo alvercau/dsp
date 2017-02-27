@@ -1,19 +1,15 @@
 import pandas as pd
-import re
 
 with open("faculty.csv") as f:
     data = pd.read_csv(f)
     data = data.rename(columns=lambda x: x.strip())
-    print data.head()
     degrees = data['degree'].str.strip()
     degrees = degrees.str.replace('\.', '')
     df = degrees.str.split(' ', expand=True)
     values = df.apply(pd.Series.value_counts)
     sum_degrees = values.sum(axis = 1)
     print 'There are '+str(len(sum_degrees)) + ' different degrees.\n'
-    for degree, total in sum_degrees.iteritems():
-        # print degree
-        print 'There are ' + str(int(total)) +' ' +degree+'s.'
+    print sum_degrees
 
     titles = data['title'].str.strip()
     df = titles.str.split(' ', expand=True)

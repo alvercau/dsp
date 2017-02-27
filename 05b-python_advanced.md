@@ -88,7 +88,6 @@ Print the first 3 key and value pairs of the dictionary:
 import pandas as pd
 from collections import defaultdict
 faculty_dict = defaultdict(list)
-
 with open("faculty.csv") as f:
     data = pd.read_csv(f)
     data = data.rename(columns=lambda x: x.strip())
@@ -153,7 +152,7 @@ with open("faculty.csv") as f:
     for row in data_needed.itertuples():
         professor_dict[row[1]] = (row[2])
     print {k: professor_dict[k] for k in professor_dict.keys()[:3]}
-```
+``
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 

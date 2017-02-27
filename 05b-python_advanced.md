@@ -152,7 +152,7 @@ with open("faculty.csv") as f:
     for row in data_needed.itertuples():
         professor_dict[row[1]] = (row[2])
     print {k: professor_dict[k] for k in professor_dict.keys()[:3]}
-``
+```
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 

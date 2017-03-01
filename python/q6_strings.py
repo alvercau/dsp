@@ -18,7 +18,9 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: '+str(count)
+    else: return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,12 +39,14 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s)>=2:
+        return s[:2]+s[-2:]
+    else: return ''
 
 
 def fix_start(s):
     """
-    Given a string s, return a string where all occurences of its
+    Given a string s, return a string where all occurrences of its
     first char have been changed to '*', except do not change the
     first char itself. e.g. 'babble' yields 'ba**le' Assume that the
     string is length 1 or more.
@@ -56,7 +60,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    s = s[0] + s[1:].replace(s[0], '*')
+    return s
 
 
 def mix_up(a, b):
@@ -74,7 +79,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    new_a = b[0]+b[1]+a[2:]
+    new_b = a[0]+a[1]+b[2:]
+    return new_a + ' ' + new_b
 
 
 def verbing(s):
@@ -91,7 +98,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3:
+        if s[-3:] == 'ing':
+            new_s = s+'ly'
+        else:
+            new_s = s+'ing'
+    else:
+        new_s = s
+    return new_s
+
 
 
 def not_bad(s):
@@ -111,7 +126,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if 'not' in s and 'bad' in s and s.find('not')< s.find('bad'):
+        new_s = s.replace(s[s.find('not'):s.rfind('bad')+3], 'good')
+        return new_s
+    else: return s
+
+
 
 
 def front_back(a, b):
@@ -130,4 +150,24 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a)%2 == 0:
+        a_front = a[:(len(a)/2)]
+        a_back = a[(len(a)/2):]
+    else:
+        a_front = a[:(len(a)+1)/2]
+        a_back = a[(len(a)+1)/2:]
+    if len(b)%2 == 0:
+        b_front = b[:(len(b)/2)]
+        b_back = b[(len(b)/2):]
+    else:
+        b_front = b[:(len(b)+1)/2]
+        b_back = b[(len(b)+1)/2:]
+    return a_front + b_front + a_back + b_back
+
+print donuts(4), donuts(10)
+print both_ends('spring'), both_ends('a')
+print fix_start('aardvark'),fix_start('donut')
+print mix_up('fix', 'pod')
+print verbing('hail'), verbing('swimming'), verbing('do')
+print not_bad('This movie is not so bad'), not_bad('This tea is not hot')
+print front_back('abcd', 'xy'), front_back('Kitten', 'Donut')

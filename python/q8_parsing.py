@@ -10,5 +10,4 @@ with open('football.csv') as f:
 
     df = pd.read_csv(f)
     df['difference'] = (df['Goals'] - df['Goals Allowed']).abs()
-    print df.head()
     print df.loc[df['difference'].min(), 'Team']

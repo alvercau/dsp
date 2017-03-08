@@ -1,7 +1,8 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
 >**The question:** Plot the actual and biased distributions of the number of children in a household.
->**Code:
+
+>**Code:**
 ```python
 resp = nsfg.ReadFemResp()
 pmf = thinkstats2.Pmf(resp['numkdhh'], label='Actual number of children in household')

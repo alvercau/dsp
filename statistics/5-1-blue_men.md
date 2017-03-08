@@ -6,6 +6,7 @@
 import scipy.stats
 mu = 178
 sigma = 7.7
+
 # given mu and sigma (mean and std), give me a normal distribution dist
 dist = scipy.stats.norm(loc=mu, scale=sigma)
 

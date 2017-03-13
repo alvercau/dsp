@@ -30,7 +30,7 @@ print(cdf.Prob(mean))
 > 66% of the population has an income below the mean.
 
 
-**The second sample:** let's assume that the upper bound is ten million dollars:
+>**The second sample:** let's assume that the upper bound is ten million dollars:
 
 ```python
 log_sample = InterpolateSample(income_df, log_upper=7.0)
@@ -50,7 +50,7 @@ print(cdf.Prob(mean))
 >Percentage: 60.3%  
 
 
-**The third sample:** the upper bound is 100.000 dollars.
+>**The third sample:** the upper bound is 100.000 dollars.
 
 ```python
 log_sample = InterpolateSample(income_df, log_upper=5.0)

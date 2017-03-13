@@ -43,11 +43,11 @@ print(mean, median, skewness, ps)
 print(cdf.Prob(mean))
 ```
 
-> Mean: 65308.9999054 
-> Median: 51226.4544789 
-> Skewness: 1.17955077982 
-> Pearson's skewness: 0.810102449294
-> percentage: 60.3%
+>Mean: 65308.9999054 
+>Median: 51226.4544789 
+>Skewness: 1.17955077982 
+>Pearson's skewness: 0.810102449294
+>Percentage: 60.3%
 
 
 **The third sample:** the upper bound is 100.000 dollars.
@@ -63,12 +63,12 @@ print(mean, median, skewness, ps)
 print(cdf.Prob(mean))
 ```
 
-> Mean: 124267.397222 
-> Median: 51226.4544789 
-> Skewness: 11.6036902675 
-> Pearson's skewness: 0.391564509277
-> Percentage: 85.7%
+>Mean: 124267.397222 
+>Median: 51226.4544789 
+>Skewness: 11.6036902675 
+>Pearson's skewness: 0.391564509277
+>Percentage: 85.7%
 
-> If the upper limit is lowered, the mean is lower, the median remains the same, the skewness is smaller and pearson's skewness is bigger. Percentage of people earning less than mean is smaller.
-> If the upper limit is higher, the mean is higher, the median remains the same, the skewness is a lot bigger and pearson's skewness is smaller.  Percentage earning less than mean is bigger.
-> This shows that mean is influenced by outliers, while median is robust. The fact that the sample skewness increased a lot when the upper limit was set to a higher number, indicates that it is sensitive to outliers. Pearson's skewness also varies, but less dramatically.
+>If the upper limit is lowered, the mean is lower, the median remains the same, the skewness is smaller and pearson's skewness is bigger. Percentage of people earning less than mean is smaller.
+>If the upper limit is higher, the mean is higher, the median remains the same, the skewness is a lot bigger and pearson's skewness is smaller.  Percentage earning less than mean is bigger.
+>This shows that mean is influenced by outliers, while median is robust. The fact that the sample skewness increased a lot when the upper limit was set to a higher number, indicates that it is sensitive to outliers. Pearson's skewness also varies, but less dramatically.

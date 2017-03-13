@@ -84,14 +84,30 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>What is asked here is what is the probability that Elvis was an identical twin, given that he was a twin; **P(identical twin | twin)**. Bayes' Theorem is as follows:
+
+**P(A|B) = (P(B|A)P(A)) / P(B)**
+
+We know P(B|A) = 1 because you can't have identical twins without having twins.
+We know P(A) = 1/300
+We don't know P(B), the probability of having twins, but we can calculate it based in P(identical) and P(fraternal), since twins are either identical or fraternal. Both events are mutually exclusive, hence:
+
+**P(A or B) = P(A) + P(B)**
+P(twins) = 1/300 + 1/125
+
+Hence:
+
+P(A|B) = (1/300) / (1/300 + 1/125) = 15/51 = 0.294
+
+**Answer:** There is a 29.4% chance that Elvis was an identical twin.
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> For frequentists, unkown parameters (such as the mean of a certain value for instance) are fixed, they cannot be associated with probabilities. For Bayesians on the other hand, unkown parameters can be associated with probabilities. This is expressed by the fact that, unlike frequentists, Bayesians make use of a prior. A prior is a probability distribution for events before evidence is taken into account. To exemplify: if you have a fair coin, before tossing it, you can assume that the probability of getting a head is 0.5. After the experiment, the prior is updated with the new data. Frequentists do not make use of this type of "previous assumptions". They assume that each experiment constitutes a random sample drawn from a population. Each experiment is thus associated with the same parameters, which are fixed for the population as a whole (a random sample is supposed to be representative of the whole population, i.e., have the same parameters as the population). 
+> According to Bayesians, if you get different data in your experiment than expected, it's because you have different parameters. For frequentists, if you get different data, it's due to measurement errors. 
 
 ---
 

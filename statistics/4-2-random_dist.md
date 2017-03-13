@@ -10,9 +10,18 @@ random_sample = np.random.random(1000)
 pmf = thinkstats2.Pmf(random_sample, label='random numbers')
 thinkplot.Pmf(pmf)
 thinkplot.Show(xlabel='Random number', ylabel = 'PMF')
+```
+The PMF for a random sample:
 
+![PMF random sample](https://github.com/alvercau/dsp/blob/master/statistics/PMF_random_sample.pdf)
+
+```python
 cdf = thinkstats2.Cdf(random_sample, label='random numbers')
 thinkplot.Cdf(cdf)
 thinkplot.Show(xlabel='Random number', ylabel = 'CDF')
 ```
+The CDF for a random sample:
+
+![CDF random sample](https://github.com/alvercau/dsp/blob/master/statistics/CDF_random_sample.pdf)
+
 >In the plot of the PMF, each random number has the same probability, which is expected given the way random.random works. The plot of the CDF confirms this: we get a more or less straight line, which corresponds to a uniform distribution. 

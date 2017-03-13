@@ -16,4 +16,7 @@ thinkplot.Show(xlabel='number of kids', ylabel = 'PMF')
 print (pmf.Mean())
 print (biased.Mean())
 ```
+> The plot of the distributions:
+![distribution children in household](https://github.com/alvercau/dsp/blob/master/statistics/Chap3ex1.pdf)
+
 >The actual mean is 1, while the biased mean is 2.4. The means differ considerably. 

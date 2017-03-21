@@ -91,7 +91,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >We know P(B|A) = 1 because you can't have identical twins without having twins.
 >We don't know P(B), the probability of having twins, but we can calculate it based in P(identical) and P(fraternal), since twins are either identical or fraternal. Both events are mutually exclusive, hence:
 
->**P(A or B) = P(A) + P(B)**
+>**P(A or B) = P(A) + P(B)**  
 >P(twins) = 1/300 + 1/125
 
 >Hence:

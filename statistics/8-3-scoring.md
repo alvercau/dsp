@@ -35,13 +35,22 @@ def Manygames(n, lam):
     for _ in range(n):
         L = SimulateGame(lam)
         Ls.append(L)
-    print('Mean error', MeanError(Ls, lam))
-    print('RMSE', RMSE(Ls, lam))
+	ME = MeanError(Ls, lam)
+	rmse = RMSE(Ls, lam)
+    print('%d\t%f\t%f'%(n, ME, rmse))
     
-Manygames(1000000, 2)
+for n in [1000000, 100000, 10000, 1000, 100, 10]:
+    Manygames(n, 2)
 ```
-> Mean error -0.001905  
-> RMSE 1.41211083134  
+n|ME|RMSE
+------
+1000000 | -0.002277 |1.414269
+100000|-0.000070|1.414132
+10000|-0.004300|1.407587
+1000|-0.043000|1.415274
+100|0.230000|1.473092
+10|-1.000000|1.549193
+
 > **Answer:** It's not biased: the higher the number of games, the closer ME gets to zero.
 
 

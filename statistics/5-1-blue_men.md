@@ -27,3 +27,4 @@ perc_right_height = smaller_than_max-smaller_than_min
 print(perc_right_height)
 ```
 >I have no clue why the effect size is mentioned in the "required exercises..."
+> Z-score = the number of standard deviations that a value is away from the mean

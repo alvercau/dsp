@@ -1,3 +1,2 @@
-print('this file was made through the nano editor')
-print('this file was created by Aleksandra')
-
+print("This file was created using the nano editor")
+print("This file was created by Aleksandra")

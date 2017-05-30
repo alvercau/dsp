@@ -22,16 +22,16 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > Command|Function
 > ---|---
 > pwd|show current working directory path
-> mkdir	<name>|creating a directory
-> rmdir	<name>|removing a directory
-> touch	<name>|create a file
-> rm <name>|remove a file
-> mv <name1> <name2>|rename a file
+> mkdir	\<name\>|create the directory in the argument
+> rmdir	\<name\>|remove the directory in the argument
+> touch	\<name\>|create a file in the current directory
+> rm \<name\>|remove a file
+> mv \<name1\> \<name2\>|rename a file
 > ls -a|list all files, including private/hidden ones
-> cp <name> <destination>|copying a file to a certain directory
-> man <command>|to open the manual of a certain command
-> stat <name>|show info about file
-> sudo <command>|run command as super user (has all permissions)
+> cp \<name\> \<destination\>|copying a file to another file
+> man \<command\>|to open the manual of a certain command
+> stat \<name\>|show info about file
+> sudo \<command\>|run command as super user (has all permissions)
 
 ---
 
@@ -51,8 +51,8 @@ What do the following commands do:
 > ls|list files/directories in current directory
 > ls -a| list all files, also private ones
 > ls -l|list files in 'long' version, i.e. with permissions, owner etc.
-> ls -lh|list files with size expressed in B/KB/MB/GB/PB instead of bites
-> ls -lah|list all files including hidden ones with B/KB/MB/GB/PB size
+> ls -lh|list files in long version with size expressed in B/KB/MB/GB/PB instead of bites
+> ls -lah|list all files in long version including hidden ones with B/KB/MB/GB/PB size
 > ls -t|list files sorted by time modified
 > ls - Glp|list files in color mode, long mode and indicate directories by adding a / at the end of their name
 
@@ -65,8 +65,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 > Command|Function
 > ---|---
 > ls -d|displays all directories
-> ls -m|displays names as comm-separated list
-> ls -R|displays subdirectories as well
+> ls -m|displays names as comma-separated list
+> ls -R|displays subdirectories as well (recursive)
 
 ---
 
@@ -78,7 +78,7 @@ What does `xargs` do? Give an example of how to use it.
 > ```
 > find . -name *.txt
 > ```
-> This command finds all .txt files in the current directory, and this list can be very long. If you want to remove all these .txt files, you can feed the output of `find` to `xargs`,which will split it up in smaller lists and feed it to the command specified to its rigth, in the case of removal, `rm`:
+> This command finds all .txt files in the current directory, and this list can be very long. If you want to remove all these .txt files, you can feed the output of `find` to `xargs`,which will split it up in smaller lists and feed it to the command specified to its right, in the case of removal, `rm`:
 > ```
 > find. -name *.txt | xargs rm
 > ```

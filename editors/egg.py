@@ -1,2 +1,2 @@
-print('This file was written through the emacs editor')
-print('This file was created by Aleksandra')
+print("This file was created using the emacs editor")
+print("This fie was created by Aleksandra")

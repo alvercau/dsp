@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->I have both versions on my computer. I usually use version 2.7, since some of the packages are not stable in version 3. It's also the version I'm most familiar with.
+> I have both versions on my computer. I learned Python in version 2.7, but lately I have been using version 3.5 more often. What I do not like about version 3.5 is that you need brackets for the print command. I keep on automatically using the 2.7 syntax...
 
 ###Q2. Which Python Version Installed   
 

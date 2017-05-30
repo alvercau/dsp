@@ -91,7 +91,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 > only_a = [animal for animal in animals if 'a' in animal]
 > # equivalent to:
 > only_a = filter(lambda x: 'a' in x, animals)
-```
+> ```
 
 ---
 
@@ -143,7 +143,7 @@ date_stop = '14-Jul-2015'
 > new_start = datetime.datetime.strptime(date_start, "%d-%b-%Y")
 > new_end = datetime.datetime.strptime(date_stop, "%d-%b-%Y")
 > print new_end - new_start
-> ``
+> ```
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
